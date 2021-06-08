@@ -16,6 +16,11 @@ function addBlocks(dimension) {
   }
 }
 
-addBlocks(5);
+addBlocks(24);
 
 // mouseover event //
+const blocks = document.querySelectorAll('.block');
+blocks.forEach(block => block.addEventListener('mouseover', function(e) {
+  e.target.style.backgroundColor = "white";
+}));
+
