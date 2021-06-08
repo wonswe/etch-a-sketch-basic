@@ -24,3 +24,12 @@ blocks.forEach(block => block.addEventListener('mouseover', function(e) {
   e.target.style.backgroundColor = "white";
 }));
 
+// clear button //
+const clearButton = document.querySelector('.clear-button');
+clearButton.addEventListener('click', clearGrid)
+
+function clearGrid() {
+  document.documentElement.style.setProperty("--default-bg", "black");
+}
+
+console.log(blocks);
