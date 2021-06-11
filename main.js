@@ -29,7 +29,5 @@ const clearButton = document.querySelector('.clear-button');
 clearButton.addEventListener('click', clearGrid)
 
 function clearGrid() {
-  document.documentElement.style.setProperty("--default-bg", "black");
+  blocks.forEach(block => block.style.backgroundColor = "black");
 }
-
-console.log(blocks);
