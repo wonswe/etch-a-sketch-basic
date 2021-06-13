@@ -16,7 +16,7 @@ function addBlocks(dimension) {
   }
 }
 
-addBlocks(24);
+addBlocks(16);
 
 // mouseover event //
 const blocks = document.querySelectorAll('.block');
@@ -24,10 +24,12 @@ blocks.forEach(block => block.addEventListener('mouseover', function(e) {
   e.target.style.backgroundColor = "white";
 }));
 
-// clear button //
+// clear button + prompt for grid dimension //
 const clearButton = document.querySelector('.clear-button');
 clearButton.addEventListener('click', clearGrid)
 
 function clearGrid() {
   blocks.forEach(block => block.style.backgroundColor = "black");
+  // const squarePer = prompt("How many squares per side?", 10);
+  // addBlocks(parseInt(squarePer));
 }
