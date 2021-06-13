@@ -13,9 +13,33 @@ body {
 }
 
 h1 {
+  font-size: 3rem;
   color: white;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+.clear-button {
+  display: block;
+  margin: -10px auto 10px auto;
+  padding: 5px 20px;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+.clear-button:active {
+  transform: translateY(5px);
 }
 
 .container {
@@ -25,7 +49,7 @@ h1 {
   width: 500px;
   height: 500px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(var(--column), 1fr);
 }
