@@ -35,6 +35,10 @@ h1 {
   border: 1px solid white;
 }
 
+.clear-grid {
+  background-color: black;
+}
+
 .toggle-white {
   background-color: white;
 }

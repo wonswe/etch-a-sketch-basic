@@ -29,7 +29,7 @@ const clearButton = document.querySelector('.clear-button');
 clearButton.addEventListener('click', clearGrid)
 
 function clearGrid() {
-  blocks.forEach(block => block.style.backgroundColor = "black");
+  blocks.forEach(block => block.classList.remove("toggle-white"));
   // const squarePer = prompt("How many squares per side?", 10);
   // addBlocks(parseInt(squarePer));
 }
