@@ -41,7 +41,12 @@ function clearGridContainer() {
 
 function clearGrid() {
   blocks.forEach(block => block.classList.remove("toggle-white"));
-  const squarePer = Number(prompt("How many squares per side?", 10));
   clearGridContainer();
-  addBlocks(squarePer);
+  const squarePer = Number(prompt("How many squares per side?", 10));
+  if (squarePer > 100) {
+    const squarePer = Number(prompt("Number cannot be greater than 100", 10));
+    addBlocks(squarePer);
+  } else {
+    addBlocks(squarePer);
+  }
 }
