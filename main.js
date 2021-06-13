@@ -3,7 +3,7 @@ const container = document.querySelector('.container');
 const blocks = document.querySelectorAll('.block');
 
 // Default Grid //
-addBlocks(10);
+addBlocks(16);
 
 // Generate Blocks (Divs) //
 function addBlock() {
