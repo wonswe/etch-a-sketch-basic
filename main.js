@@ -16,11 +16,12 @@ function addBlocks(dimension) {
   }
 }
 
-addBlocks(24);
+addBlocks(16);
 
 // mouseover event //
 const blocks = document.querySelectorAll('.block');
 blocks.forEach(block => block.addEventListener('mouseover', function(e) {
-  e.target.style.backgroundColor = "white";
+  // e.target.style.backgroundColor = "white";
+  e.target.classList.add("toggle-white");
 }));
 

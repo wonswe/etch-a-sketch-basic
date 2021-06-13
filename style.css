@@ -35,6 +35,6 @@ h1 {
   border: 1px solid white;
 }
 
-/* .container > div:hover {
-  background-color: rgb(255, 255, 255);
-} */
+.toggle-white {
+  background-color: white;
+}
