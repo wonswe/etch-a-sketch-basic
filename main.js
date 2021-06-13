@@ -21,7 +21,7 @@ addBlocks(16);
 // mouseover event //
 const blocks = document.querySelectorAll('.block');
 blocks.forEach(block => block.addEventListener('mouseover', function(e) {
-  e.target.style.backgroundColor = "white";
+  e.target.classList.add("toggle-white");
 }));
 
 // clear button + prompt for grid dimension //
