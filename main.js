@@ -25,7 +25,9 @@ function addBlocks(dimension) {
 function addMouseOver() {
   const blocks = document.querySelectorAll('.block');
   blocks.forEach(block => block.addEventListener('mouseover', function(e) {
-  e.target.classList.add("toggle-white");
+  // e.target.classList.add("toggle-white");
+  let color = getColor();
+  e.target.style.setProperty("background-color", color);
 }));
 }
 
@@ -49,4 +51,17 @@ function clearGrid() {
   } else {
     addBlocks(squarePer);
   }
+}
+
+// random RGB color - basic //
+function getColor() {
+  let symbols, color;
+  symbols = "0123456789ABCDEF";
+
+  color = "#";
+
+  for (let i = 0; i < 6; i++) {
+    color = color + symbols[Math.floor(Math.random() * 16)];
+  }
+  return color;
 }
