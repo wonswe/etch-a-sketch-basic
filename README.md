@@ -1,2 +1,2 @@
-# TOP-etch-a-sketch-basic
-LIVE: https://wonswe.github.io/etch-a-sketch-basic/
+# Etch A Sketch - Black & White
+LIVE: https://wonswe.github.io/etch-a-sketch-bw/
